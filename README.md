@@ -1,11 +1,1 @@
-DEMO DATA
-
-{
-[year]: {
-[month]: {
-1: 4,
-2: 5,
-3: 1
-}
-}
-}
+This is my first next js project to learn how to use next js.
