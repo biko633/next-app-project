@@ -2,26 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.textGradient {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #def9fa 0.89%,
+    #bef3f5 17.23%,
+    #9dedf0 42.89%,
+    #7de7eb 71.67%,
+    #5ce1e6 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.purpleShadow {
+  box-shadow: 3px 3px 1px 1px lavender;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.purpleShadow:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 0px 0px 1px 1px lavender;
+  transition: all 0.3s ease;
 }
